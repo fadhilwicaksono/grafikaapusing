@@ -1,0 +1,30 @@
+body{ 
+    background: rgb(151,182,192);
+    background: linear-gradient(90deg, rgba(151,182,192,1) 0%, rgba(149,209,254,1) 100%);
+}
+#canvas{
+    border:2px solid white;
+    background-color : white;
+}
+
+.canvasBesar{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu{
+    display: flex;
+    padding-top : 500px;
+    padding-left : 550px;
+}
+
+.goToKotak{
+    margin: 5px;
+}
+
+.goToLingkaran{
+    margin:5px;
+}
