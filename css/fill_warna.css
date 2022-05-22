@@ -1,7 +1,6 @@
 body{
     background: rgb(66,66,67);
-    background: linear-gradient(90deg, rgba(66,66,67,1) 0%, rgba(246,251,251,1) 38%, rgba(172,174,174,1) 64%, rgba(208,208,208,1) 86%, rgba(138,131,131,1) 99%); 
-}
+    background: linear-gradient(90deg, rgba(66,66,67,1) 0%, rgba(246,251,251,1) 38%, rgba(172,174,174,1) 64%, rgba(208,208,208,1) 86%, rgba(138,131,131,1) 99%); }
 #canvas{
     border:2px solid white;
     background-color : white;
@@ -10,12 +9,22 @@ body{
     background-color: #343a40 !important;
     border-color:#343a40 !important;
 }
-.canvasBesar{
-    margin: 0;
+
+.container1{
+    padding-top : 500px;
+    padding-left: 50px;
+    margin: 20;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    display: inline-block; 
+    width: 600px; 
+    height: 500px; 
+    background-color: silver; 
+    overflow: hidden; 
+    position: relative;
 }
 
 .menu{
