@@ -1,3 +1,29 @@
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+const centerX = canvas.width / 2;
+const centerY = canvas.height / 2;
+var radius;
+
+
+function buat() {
+  context.beginPath();
+  context.fillStyle = '#0077aa';
+  context.strokeStyle = '#0077aa47';
+  context.lineWidth = 2;
+
+  var ambil_radius = document.getElementById('r').value;
+  radius = ambil_radius;
+  context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+  context.fill();
+  context.stroke(); 
+
+}
+
+
+
+/*
+
+versi lama
 $(function(){
     var canvas=document.getElementById("canvas");
     var ctx=canvas.getContext("2d");
@@ -48,3 +74,4 @@ $(function(){
     $("#canvas").mouseup(function(e){handleMouseUp(e);});
     $("#canvas").mouseout(function(e){handleMouseOut(e);});
 });
+*/

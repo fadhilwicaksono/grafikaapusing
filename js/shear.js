@@ -9,7 +9,7 @@ function pergeseran(){
     var rectWidth = 300;
     var rectHeight = 155;
     
-    // shear matrix:
+    // matrik pergeseran:
     //  1  sx  0              
     //  sy  1  0
     //  0   0  1  
@@ -20,10 +20,10 @@ function pergeseran(){
     sx = horizontal; // 0.75 pergeseran horizontal
     sy = vertikal; // no pergeseran vertical 
 
-    // translate context to center of canvas
+    //menempatkan ditengah2
     context.translate(canvas.width / 2, canvas.height / 2);
     
-    // apply custom transform
+    //mengaplikasikan hasil sy sx ke matrix
     context.transform(1, sy, sx, 1, 0, 0);
     
     context.fillStyle = "black";
